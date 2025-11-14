@@ -15,7 +15,7 @@ try:
         # send to events topic
         producer.send("events",value=message.encode("utf-8"))
         event_id += 1
-        time.sleep(2)
+        time.sleep(1)
 except KeyboardInterrupt:
     print("Producer stopped..")
 finally:

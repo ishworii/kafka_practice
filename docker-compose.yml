@@ -20,3 +20,7 @@ services:
 
       # Required for a single node cluster
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      # auto-create
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      # default partition
+      KAFKA_NUM_PARTITIONS : 3
