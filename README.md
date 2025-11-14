@@ -32,3 +32,29 @@ Using the `user_id` as a key is important because it ensures that all events for
 #### Consumer
 
 The `consumer.py` script consumes messages from the `events` topic. It uses a `group_id` of "event-watchers", which allows multiple instances of the consumer to work together as a consumer group to process messages in parallel.
+
+
+#### Event Processing
+The `processor.py` scripts consumes and processed the events and shows the count of action for each user like following:
+
+```json
+{
+  "sdsdsfsfsfasfasfasfasfa": {
+    "purchase": 3,
+    "view": 3,
+    "click": 5
+  },
+  "sdfsdfsdf452535": {
+    "add_to_cart": 5,
+    "purchase": 3,
+    "click": 4,
+    "view": 2
+  },
+  "23124234234": {
+    "add_to_cart": 2,
+    "view": 3,
+    "purchase": 2,
+    "click": 2
+  }
+}
+```
